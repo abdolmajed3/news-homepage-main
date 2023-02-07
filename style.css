@@ -2,4 +2,46 @@
 
 body{
     margin:0;
+    font-family: Inter;
+    font-size: 13px;
+}
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 3rem 0 1rem;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav li {
+    list-style: none;
+}
+.first-section {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+}
+.post-thumb img{
+    width: 100%;
+}
+.post-description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.main-sidebar {
+    background: hsl(240, 100%, 5%);
+    padding: 1rem;
+    color: hsl(36, 100%, 99%);
+    line-height: 1.8rem;
+}
+.sidebar-title h2 {
+    color: hsl(35, 77%, 62%);
+}
+.sidebar-content {
+    border-bottom: 1px solid #fff;
 }
