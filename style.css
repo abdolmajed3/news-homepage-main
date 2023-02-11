@@ -11,10 +11,23 @@ body {
     margin: 0 auto;
 }
 
+@media screen and (min-width:375px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 3rem 0 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
 
 nav ul {
@@ -32,6 +45,19 @@ nav li {
     gap: 15px;
 }
 
+@media only screen and (max-width: 768px) {
+    .first-section {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .post-thumb img {
+        width: 100%;
+        height: 225px;
+        padding: 1rem;
+    }
+}
+
 .post-thumb img {
     width: 100%;
 }
@@ -42,6 +68,12 @@ nav li {
     color: hsl(236, 13%, 42%);
     font-size: 18px;
     padding: 7px;
+}
+
+@media only screen and (max-width: 768px) {
+    .post-description {
+        grid-template-columns: 1fr;
+    }
 }
 
 .post-title h1 {
@@ -88,21 +120,39 @@ nav li {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 2rem 0;
 }
+
+@media only screen and (max-width: 768px) {
+    .section2 {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 1rem;
+    }
+
+    .post {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
 .post {
     display: flex;
     justify-content: flex-start;
     height: 150px;
 }
-.img img{
+
+.img img {
     width: 125px;
     height: 100%;
 }
-.post-content{
+
+.post-content {
     padding: 5px 12px;
 }
-.post-id{
+
+.post-id {
     color: hsl(233, 8%, 79%);
 }
+
 .post p {
     color: hsl(236, 13%, 42%);
 }
